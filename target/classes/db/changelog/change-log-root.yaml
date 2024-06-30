@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Roman
+      changes:
+        - sqlFile:
+            path: db/changelog/create_table.sql
+        - tagDatabase:
+            tag: 0.0.1
+  - changeSet:
+      id: 2
+      author: Roman
+      changes:
+        - sqlFile:
+            path: db/changelog/create_constraints.sql
+        - tagDatabase:
+            tag: 0.0.1
+  - changeSet:
+      id: 3
+      author: Roman
+      changes:
+        - sqlFile:
+            path: db/changelog/add_data.sql
+        - tagDatabase:
+            tag: 0.0.1
