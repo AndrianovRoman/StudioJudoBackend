@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <include file="ddl/create-table/create-table-role-changelog.xml" relativeToChangelogFile="true"/>
+    <include file="ddl/create-table/create-table-user-changelog.xml" relativeToChangelogFile="true"/>
+    <include file="ddl/create-table/create-table-user-role-changelog.xml" relativeToChangelogFile="true"/>
+    <include file="ddl/create-table/create-table-session-changelog.xml" relativeToChangelogFile="true"/>
+    <include file="ddl/create-table/create-table-qualification-changelog.xml" relativeToChangelogFile="true"/>
+    <include file="ddl/create-table/create-table-booking-changelog.xml" relativeToChangelogFile="true"/>
+    <include file="ddl/create-table/create-table-refresh-token-changelog.xml" relativeToChangelogFile="true"/>
+
+    <include file="dml/qualification-values-insert-changelog.xml" relativeToChangelogFile="true"/>
+    <include file="dml/role-values-insert-changelog.xml" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>

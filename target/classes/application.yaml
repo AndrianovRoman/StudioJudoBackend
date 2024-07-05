@@ -11,8 +11,14 @@
 #  liquibase:
 #    change-log: classpath:db/changelog/change-log-root.yaml
 #    enable: true
-#server:
-#  port: 3000
+
+#jwt:
+#  secret:
+#  token:
+#  expiration: 3600000 # 1 hour
+#  refresh:
+#    token:
+#      expiration: 86400000 # 24 hours
 
 spring:
   datasource:
@@ -25,7 +31,29 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: none
+    show-sql: true
 
   liquibase:
-    enabled: true
-    change-log: classpath:db/changelog/change-log-root.yaml
+#    enabled: true
+#    change-log: classpath:db/changelog/change-log-root.yaml
+    change-log: classpath:/db/changelog/main-changelog.xml
+
+  authorization:
+    secret: "6251655468576D5A7134743777217A25432A46294A404E635266556A586E3272"
+    expiration: 86400000
+    refresh:
+      secret: "Fzu8EfZP8xK5I+cGxAhDRmEHtQJLzTu7Tb+KtUcWAbQi5r7MmFk7xHK2BY7r22oX"
+      expiration: 25920000
+
+  cors:
+    origins: "*"
+    methods: "*"
+    headers: "*"
+
+  admin:
+    login: "admin"
+    email: "admin@mail.ru"
+    password: "admin"
+
+  export:
+    date-format: "dd.MM.yyyy"
