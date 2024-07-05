@@ -9,15 +9,15 @@
             <column name="id" value="1"/>
             <column name="name" value="КМС"/>
         </insert>
-        <insert tableName="role">
+        <insert tableName="qualification">
             <column name="id" value="2"/>
             <column name="name" value="МС"/>
         </insert>
-        <insert tableName="role">
+        <insert tableName="qualification">
             <column name="id" value="3"/>
             <column name="name" value="МСМК"/>
         </insert>
-        <insert tableName="role">
+        <insert tableName="qualification">
             <column name="id" value="4"/>
             <column name="name" value="ЗМС"/>
         </insert>

@@ -22,7 +22,7 @@
                 <constraints nullable="false"/>
             </column>
             <column name="phone_number" type="varchar(20)"/>
-            <column name="qualification_id" type="smallint">
+            <column name="qualification" type="smallint">
                 <constraints foreignKeyName="fk_user_qualification" references="qualification(id)"/>
             </column>
         </createTable>
